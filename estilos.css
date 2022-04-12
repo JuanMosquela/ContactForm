@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.section h2{
+    text-align: center;
+}
+
+
+.formulario{
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: rgb(241, 234, 234);
+    padding: 2rem 10%;
+}
+
+@media(max-width: 600px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.formulario-label{
+    display: block;
+    font-weight: bolder;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.formulario-grupo{    
+    min-height: 140px;
+}
+
+.formulario-grupo-input{
+    position: relative;
+    
+}
+
+.formulario-input,textarea{
+    font-family: sans-serif;
+    width: 100%;
+    border: 2px solid transparent;
+    padding: .5rem;
+    border-radius: 2px;
+    transition: .2s ease all;
+    outline: none;
+    
+}
+
+textarea{
+    grid-column: span 2;
+}
+
+.formulario-input:focus{
+    border: 2px solid #0075FF;
+    box-shadow: 1px 0 30px rgba(163, 163, 163, .3);
+}
+
+.formulario-input-error{
+    padding-top: .5rem;
+    
+    
+    display: none;
+    
+}
+
+.formulario-input-error.active{
+    display: block;
+}
+
+.validacion-error,
+.validacion-success{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    opacity: 0;
+    
+}
+
+
+.formulario-checkbox{
+    margin-right: 10px;
+}
+
+.formulario-mensaje,
+.formulario-btn{
+    grid-column: span 2;
+    
+
+
+}
+
+.formulario-mensaje{
+    background-color: #e64c4c;    
+    padding: 1rem;
+    display: none;    
+
+}
+
+.formulario-mensaje.active{
+    display: block;
+}
+
+.formulario-mensaje i{
+    margin-right: 10px;
+}
+
+.formulario-btn{
+    display: flex;
+    flex-direction: column ;    
+    align-items: center;
+    
+  
+}
+
+button{
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 1rem;    
+    cursor: pointer;
+    font-weight: bolder;
+    border: none;
+    width: 20%;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    
+}
+
+.formulario-btn .formulario-success{
+    color: rgb(18, 187, 18);
+    display: none;
+}
+
+.formulario-success.active{
+    display: block;
+}
+
+.formulario-grupo.correcto .validacion-success{
+    color: #1ed128;
+    opacity: 1;
+}
+
+.formulario-grupo.error .validacion-error{
+    color: #e64c4c;
+    opacity: 1;
+}
+
+.formulario-grupo.error label{
+    color: #e64c4c;
+}
+
+.formulario-grupo.error input{
+    border: #e64c4c 2px solid;
+}
+
+
+

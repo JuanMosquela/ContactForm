@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+    
+</head>
+<body> 
+
+   
+    <section id="seccion2" class="section">
+        
+        <form class="formulario" target="_blank" action="https://formsubmit.co/jmosquella11@hgmail.com" method="POST">
+           
+            <div class="formulario-grupo" id="grupo-nombre">
+                <label for="nombre" class="formulario-label">Nombre</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="Ingresa tu nombre">                   
+                    <i class="validacion-success fa-solid fa-circle-check"></i>                   
+                    <i class="validacion-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error" id="error-message-nombre">El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+            </div>
+            <div class="formulario-grupo" id="grupo-usuario">
+                <label for="usuario" class="formulario-label">Asunto</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="asunto" id="asunto" placeholder="Ingresa el motivo de tu mensaje" required> 
+                    <i class="validacion-success fa-solid fa-circle-check"></i>                   
+                    <i class="validacion-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error" id="error-message-usuario">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+            </div>
+            <div class="formulario-grupo" id="grupo-password">
+                <label for="password" class="formulario-label">Contraseña</label>
+                <div class="formulario-grupo-input">
+                    <input type="password" class="formulario-input" name="password" id="password" placeholder="Ingresa tu contraseña">                   
+                    <i class="validacion-success fa-solid fa-circle-check"></i>                   
+                    <i class="validacion-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error" id="error-message-password">La contraseña tiene que ser de 4 a 12 digitos</p>
+            </div>
+            <div class="formulario-grupo" id="grupo-password2">
+                <label for="password2" class="formulario-label">Verifica tu contraseña</label>
+                <div class="formulario-grupo-input">
+                    <input type="password" class="formulario-input" name="password2" id="password2" placeholder="Vuelve a ingresar tu contraseña">                   
+                    <i class="validacion-success fa-solid fa-circle-check"></i>                   
+                    <i class="validacion-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error" id="error-message-password2">Ambas contraseñas tinen que ser iguales</p>
+            </div>
+            <div class="formulario-grupo" id="grupo-email">
+                <label for="email" class="formulario-label">Correo Electronico</label>
+                <div class="formulario-grupo-input">
+                    <input type="email" class="formulario-input" name="email" id="email" placeholder="Ingresa tu email">                   
+                    <i class="validacion-success fa-solid fa-circle-check"></i>                   
+                    <i class="validacion-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error" id="error-message-email">Tu correo solo puede contener letras, numeros, puntos, guiones y guiones bajos</p>
+            </div>
+            <div class="formulario-grupo" id="grupo-telefono">
+                <label for="telefono" class="formulario-label">Telefono</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="telefono" id="telefono" placeholder="Ingresa tu numero de contacto">                   
+                    <i class="validacion-success fa-solid fa-circle-check"></i>                   
+                    <i class="validacion-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error" id="error-message-telefono">El telefono solo puede contener numeros y el maximo es de 14 digitos</p>
+            </div>
+            <textarea name="textarea" cols="30" rows="10" placeholder="Ingresa tu mensaje" required></textarea>
+
+
+            <div class="formulario-grupo" id="grupo-terminos">
+                <label class="formulario-label">
+                    <input class="formulario-checkbox" type="checkbox" name="checkbox">
+                    Acepto los terminos y condiciones
+                </label>
+
+            </div>
+
+            <div class="formulario-mensaje" id="formulario-mensaje">
+                <p><i class="fas fa-exclamation-triangle" ></i><b>Error:</b> Por favor, rellena el formulario correctamente</p>
+            </div>
+
+            <div class="formulario-grupo formulario-btn">
+                <button type="submit" class="btn">Enviar</button>
+                <p class="formulario-success">Tu mensaje ha sido enviado exitosamente!</p>
+            </div>
+            
+        </form>
+    </section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="contact.js"></script>
+</body>
+</html>
