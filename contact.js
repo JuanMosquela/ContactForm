@@ -87,12 +87,12 @@
 
 
     form.addEventListener('submit', (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
         if(campos.nombre && campos.password && campos.email && campos.telefono){
             document.querySelector('.formulario-success').classList.add('active');
             document.getElementById('formulario-mensaje').classList.remove('active');
-            form.reset();
+            
             
             setTimeout(()=>{
                 document.querySelector('.formulario-success').classList.remove('active');
@@ -114,6 +114,7 @@
         
         
     })
+    
 
 
    
